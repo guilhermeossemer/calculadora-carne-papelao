@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Tara</title>
+    <link rel="icon" href="logo-koch.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="teste.html"><img src="logo-koch.png" alt="Logo-superkoch" class="logo"></a>
+    </header>
+
+    <main>
+        
+        <section id="menu">
+            <h2>Escolha uma opção:</h2>
+            <button class="btn" onclick="mostrarFormulario(1)">Calculadora com cx de papelão</button>
+            <button class="btn" onclick="mostrarFormulario(2)">Calculadora sem cx de papelão</button>
+        </section>
+
+        <section id="formulario1" style="display: none;">
+            <p class="taraEmbalagem">Tara embalagem:<input type="number" id="taraEmbalagem" placeholder="EX: 10"
+                    required autocomplete="off"></p>
+            <p class="qtdPeca">Quantidade de peças:<input type="number" id="qtdPeca" placeholder="EX: 25" required
+                    autocomplete="off"></p>
+            <p class="qtdcaixa">Quantidade de caixas:<input type="number" id="qtdcaixaa" placeholder="EX: 8" required
+                    autocomplete="off"></p>
+            <p class="taraCaixa">Tara da caixa:<input type="number" id="taraCaixa" placeholder="EX: 0.685" required
+                    autocomplete="off"></p>
+            <p class="pesoBalanca">Peso da balança:<input type="number" id="pesoBalanca" placeholder="EX: 100" required
+                    autocomplete="off"></p>
+            <button class="btn" onclick="calcularTaraPapelao()">Calcular</button>
+            <p class="resultado-liquido">Peso liquido:</p>
+            <p class="resultado" id="resultado"></p>
+            <button class="btn-voltar" onclick="voltarMenu()">Voltar</button>
+        </section>
+
+        <section id="formulario2" style="display: none;">
+            <p class="tara">Tara embalagem:<input type="number" id="tara" placeholder="EX: 10" required
+                    autocomplete="off"></p>
+            <p class="qtdPeca">Quantidade de peças:<input type="number" id="qtdPeca2" placeholder="EX: 25" required
+                    autocomplete="off"></p>
+            <p class="pesoBalanca">Peso da balança:<input type="number" id="pesoBalanca2" placeholder="EX: 100" required
+                    autocomplete="off"></p>
+            <button class="btn" onclick="calcularTara()">Calcular</button>
+            <p class="resultado-liquido">Peso liquido:</p>
+            <p class="resultado" id="resultado2"></p>
+            <button class="btn-voltar" onclick="voltarMenu()">Voltar</button>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
