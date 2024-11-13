@@ -24,7 +24,7 @@ function calcularTaraPapelao() {
         return;
     }
 
-    document.getElementById("resultado").innerText = resultado.toFixed(2);
+    document.getElementById("resultado").innerText = resultado.toFixed(3);
 }
 
 function calcularTara() {
@@ -39,5 +39,5 @@ function calcularTara() {
         return;
     }
 
-    document.getElementById("resultado2").innerText = resultado.toFixed(2);
+    document.getElementById("resultado2").innerText = resultado.toFixed(3);
 }
